@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER TejasviniShelar
+MAINTAINER RaviTejaGajarla
 RUN apt-get update -y
 RUN apt-get install -y python-pip python-dev build-essential
 COPY . /app
