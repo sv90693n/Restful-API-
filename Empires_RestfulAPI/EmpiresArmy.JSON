@@ -1,0 +1,93 @@
+{
+    "empires": [{
+            "empireid": "101",
+            "empirename": "Byzantines",
+            "symbol": "Greek Fire",
+            "speciality": "Defense",
+            "uniqueunit": "Cataphract",
+            "wonder": "Hagia Sophia",
+            "army": [{
+                    "armyid": "101",
+                    "armyname": "Militia",
+                    "typeid": "m1"
+                }, {
+                    "armyid": "102",
+                    "armyname": "UpgradedArchery",
+                    "typeid": "a2"
+                }
+            ]
+        },
+        {
+            "empireid": "102",
+            "empirename": "Goths",
+            "symbol": "Anarchy",
+            "speciality": "Infantry",
+            "uniqueunit": "Huskarl",
+            "wonder": "Mausoleum of Theoderic I",
+            "army": [{
+                    "armyid": "101",
+                    "armyname": "UpgradedMilitia",
+                    "typeid": "m2"
+                }, {
+                    "armyid": "102",
+                    "armyname": "Archery",
+                    "typeid": "a1"
+                }
+            ]
+        },
+        {
+            "empireid": "103",
+            "empirename": "Tuetons",
+            "symbol": "Ironclad",
+            "speciality": "Cavalry",
+            "uniqueunit": "Teutonic Knight",
+            "wonder": "Maria Laach Abbey",
+            "army": [{
+                    "armyid": "101",
+                    "armyname": "UpgradedMilitia",
+                    "typeid": "m2"
+                }, {
+                    "armyid": "102",
+                    "armyname": "UpgradedArchery",
+                    "typeid": "a2"
+                }
+            ]
+        },
+        {
+            "empireid": "104",
+            "empirename": "Saracens",
+            "symbol": "Madrasah",
+            "speciality": "Cavalry and Navy",
+            "uniqueunit": "Mameluke",
+            "wonder": "Great Mosque of Samarra",
+            "army": [{
+                    "armyid": "101",
+                    "armyname": "Cavalry",
+                    "typeid": "c1"
+                }, {
+                    "armyid": "102",
+                    "armyname": "Ships",
+                    "typeid": "s1"
+                }
+            ]  
+        },
+        {
+            "empireid": "105",
+            "empirename": "Aztecs",
+            "symbol": "Atlatl",
+            "speciality": "Monks and infantry",
+            "uniqueunit": "Jaguar Warrior",
+            "wonder": "Great Pyramid of Tenochtitlan",
+            "army": [{
+                    "armyid": "101",
+                    "armyname": "Eagle Scout",
+                    "typeid": "e1"
+                }, {
+                    "armyid": "102",
+                    "armyname": "UpgradedArchery",
+                    "typeid": "a2"
+                }
+            ]
+        }
+    ]
+}

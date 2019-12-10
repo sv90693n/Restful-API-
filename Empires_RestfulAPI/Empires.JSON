@@ -1,0 +1,43 @@
+{
+    "empires": [{
+            "empireid": "1001",
+            "empirename": "Byzantines",
+            "symbol": "Greek Fire",
+            "speciality": "Defense",
+            "uniqueunit": "Cataphract",
+            "wonder": "Hagia Sophia"
+        },
+        {
+            "empireid": "1002",
+            "empirename": "Goths",
+            "symbol": "Anarchy",
+            "speciality": "Infantry",
+            "uniqueunit": "Huskarl",
+            "wonder": "Mausoleum of Theoderic I"
+        },
+        {
+            "empireid": "1003",
+            "empirename": "Tuetons",
+            "symbol": "Ironclad",
+            "speciality": "Cavalry",
+            "uniqueunit": "Teutonic Knight",
+            "wonder": "Maria Laach Abbey"
+        },
+        {
+            "empireid": "1004",
+            "empirename": "Saracens",
+            "symbol": "Madrasah",
+            "speciality": "Cavalry and Navy",
+            "uniqueunit": "Mameluke",
+            "wonder": "Great Mosque of Samarra"   
+        },
+        {
+            "empireid": "1005",
+            "empirename": "Aztecs",
+            "symbol": "Atlatl",
+            "speciality": "Monks and infantry",
+            "uniqueunit": "Jaguar Warrior",
+            "wonder": "Great Pyramid of Tenochtitlan"
+        }
+    ]
+}
