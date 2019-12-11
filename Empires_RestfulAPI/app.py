@@ -18,17 +18,6 @@ with open('Army.JSON') as army_data:
 		list_of_armies.append(army)
 	print("list_of_armies: ", list_of_armies)
 
-@app.route('/empires/<string:empire_id>/army', methods =['GET'])
-def army_by_empire_id(empire_id):
-	empire_army = [armies for armies in list_of_armies if armies['empireid'] == empire_id]
-	# print("empire_army: ", str(empire_army))
-	army = empire_army[0]['army']
-	# print("empire_army: ", str(army))
-	typefilter = request.args.get('type')
-	if (typefilter == 'json'):
-		return jsonify(empire_army)
-	return render_template("index.html", list_army_data=army)
-
 @app.route('/', methods =['GET'])
 def home():
 	return render_template("index.html")
@@ -48,6 +37,16 @@ def empire_by_id(empire_id):
 		return jsonify(emp)
 	return render_template("index.html",list_data=emp)
 
+@app.route('/empires/<string:empire_id>/army', methods =['GET'])
+def army_by_empire_id(empire_id):
+	empire_army = [armies for armies in list_of_armies if armies['empireid'] == empire_id]
+	# print("empire_army: ", str(empire_army))
+	army = empire_army[0]['army']
+	# print("empire_army: ", str(army))
+	typefilter = request.args.get('type')
+	if (typefilter == 'json'):
+		return jsonify(empire_army)
+	return render_template("index.html", list_army_data=army, empire_id=empire_id)
 
 @app.route('/empires/<string:empire_id>/army/<string:army_id>', methods =['GET'])
 def army_by_empire_id_army_id(empire_id, army_id):
@@ -60,7 +59,7 @@ def army_by_empire_id_army_id(empire_id, army_id):
 	typefilter = request.args.get('type')
 	if (typefilter == 'json'):
 		return jsonify(arm)
-	return render_template("index.html", list_army_data=arm)
+	return render_template("index.html", list_army_data=arm, empire_id=empire_id)
 
 if __name__ == '__main__':
 	 app.run(host='0.0.0.0', port=5000)

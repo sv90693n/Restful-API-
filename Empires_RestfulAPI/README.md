@@ -17,16 +17,25 @@ Steps to run RESTful web service:
 * You can check the image created using "docker images". You will find the image students-image under the list.
 
 * Run the created students-image image inside a container using the following command
-  "docker run -d -p 5001:5000 --name empires-container empires-image" 
+  "docker run -d -p 5000:5000 --name empires-container empires-image" 
 
 * Check running docker container by "docker ps"
 
 * App will now be running at the following address: -
-  http://0.0.0.0:5000/empires
+  http://<host_ip_address>:5000/empires
   
 * For specific Id use the following url
-  http://0.0.0.0:5000/empires/101 --- 101 is the id you wish to search
+  http://<host_ip_address>:5000/empires/101 --- 101 is the id you wish to search
 
-* http://0.0.0.0:5000/empires/101/army
+* http://<host_ip_address>:5000/empires/101/army
 
-* http://0.0.0.0:5000/empires/101/army/101
+* http://<host_ip_address>:5000/empires/101/army/101
+
+For data in json format
+* http://<host_ip_address>:5000/empires?type=json
+
+* http://<host_ip_address>:5000/empires/101?type=json
+
+* http://<host_ip_address>:5000/empires/101/army?type=json
+
+* http://<host_ip_address>:5000/empires/101/army/101?type=json
