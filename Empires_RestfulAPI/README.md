@@ -27,7 +27,7 @@ Steps to run RESTful web service:
 
 * App will now be running at the following urls: -
   http://<host_ip_address>:5000
-  
+
   http://<host_ip_address>:5000/empires
 
   http://<host_ip_address>:5000/empires/101 --- 101 is the id you wish to search
