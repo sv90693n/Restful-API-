@@ -4,7 +4,11 @@ Created a RESTful Web service that displays data of empires in JSON format using
    
 * /empires
    
-* /empires/empireId
+* /empires/{empireid}
+
+* /empires/{empireId}/army
+
+* /empires/{empireid}/army/{armyid}
     
 Steps to run RESTful web service:
 
@@ -21,8 +25,22 @@ Steps to run RESTful web service:
 
 * Check running docker container by "docker ps"
 
-* App will now be running at the following address: -
-  http://0.0.0.0:5000/empires
-  
-* For specific Id use the following url
-  http://0.0.0.0:5000/empires/1001 --- 1001 is the id you wish to search
+* App will now be running at the following urls: -
+  http://<host_ip_address>:5000
+
+  http://<host_ip_address>:5000/empires
+
+  http://<host_ip_address>:5000/empires/101 --- 101 is the id you wish to search
+
+* http://<host_ip_address>:5000/empires/101/army
+
+* http://<host_ip_address>:5000/empires/101/army/101
+
+* For data in json format: -
+* http://<host_ip_address>:5000/empires?type=json
+
+* http://<host_ip_address>:5000/empires/101?type=json
+
+* http://<host_ip_address>:5000/empires/101/army?type=json
+
+* http://<host_ip_address>:5000/empires/101/army/101?type=json
